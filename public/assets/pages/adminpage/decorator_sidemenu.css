@@ -15,6 +15,7 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin: 25px 0 40px 0;
+    padding-top: 0;
 }
 .component_menu_sidebar ul {
     color: rgba(255, 255, 255, 0.5);
@@ -104,3 +105,4 @@
         margin: 0 10px;
     }
 }
+

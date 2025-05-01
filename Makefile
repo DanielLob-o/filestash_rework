@@ -3,6 +3,7 @@ all:
 	make build_init
 	make build_frontend
 	make build_backend
+	./dist/organiStash 
 
 install_dependencies:
 	@echo "🔧 Installing system dependencies..."

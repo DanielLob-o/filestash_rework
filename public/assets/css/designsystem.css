@@ -15,15 +15,15 @@
 :root {
     --bg-color: #f9f9fa;
     --color: #57595A;
-    --emphasis: #466372;
-    --primary: #9AD1ED;
-    --emphasis-primary: #c5e2f1;
-    --emphasis-secondary: #466372;
+    --emphasis: #795c3a;
+    --primary: #56866d;
+    --emphasis-primary: #406551;
+    --emphasis-secondary: #5b452c;
     --light: #878890;
     --super-light:  #fafafa;
-    --error: #f26d6d;
-    --success: #63d9b1;
-    --dark: #24272a;
+    --error: #8d1c1c;
+    --success: #56866d;
+    --dark: #406551;
 
     --border: rgba(198,200,204,0.3);
 }
