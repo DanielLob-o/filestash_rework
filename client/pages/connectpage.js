@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./connectpage.scss";
 import { Session } from "../model/";
 import { Container, NgShow, Loader, ErrorPage } from "../components/";
-import { ForkMe, PoweredByFilestash, Form } from "./connectpage/";
+import { Form } from "./connectpage/";
 import { cache, notify, urlParams, setup_cache_state } from "../helpers/";
 
 function ConnectPageComponent({ error, history }) {
@@ -75,7 +75,6 @@ function ConnectPageComponent({ error, history }) {
 
     return (
         <div className="component_page_connect">
-            { window.CONFIG["fork_button"] && <ForkMe /> }
             <div style={{ paddingTop: `${_centerThis()}px` }} />
             <Container maxWidth="565px">
                 { isLoading && <Loader /> }
@@ -83,7 +82,6 @@ function ConnectPageComponent({ error, history }) {
                     <Form onLoadingChange={onFormChangeLoadingState}
                         onError={error}
                         onSubmit={onFormSubmit} />
-                    { window.CONFIG["fork_button"] && <PoweredByFilestash /> }
                 </NgShow>
             </Container>
         </div>

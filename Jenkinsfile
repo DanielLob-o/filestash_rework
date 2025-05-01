@@ -33,7 +33,7 @@ pipeline {
                         // build
                         sh "go get ./..."
                         sh "go generate -x ./server/..."
-                        sh "CGO_ENABLED=0 go build -o dist/filestash cmd/main.go"
+                        sh "CGO_ENABLED=0 go build -o dist/organiStash cmd/main.go"
                     }
                 }
             }
