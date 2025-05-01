@@ -89,11 +89,6 @@ The architecture is designed to enable implementers to build file managers that 
 - [Installation](https://www.filestash.app/docs/install-and-upgrade/)
 - [API](https://www.filestash.app/docs/api/)
 
-# Support
-- For companies -> [support contract](https://www.filestash.app/pricing/)
-- For individuals -> [#filestash](https://kiwiirc.com/nextclient/#irc://irc.libera.chat/#filestash?nick=guest??) on IRC (libera.chat). To financially contribute to the project:
-  - Bitcoin: `3LX5KGmSmHDj5EuXrmUvcg77EJxCxmdsgW`
-  - [Open Collective](https://opencollective.com/filestash)
 
 # Credits
 - [Contributors](https://github.com/mickael-kerjean/filestash/graphs/contributors) and folks developing [awesome libraries](https://github.com/mickael-kerjean/filestash/blob/master/go.mod)
