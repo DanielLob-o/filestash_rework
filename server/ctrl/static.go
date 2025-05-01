@@ -271,10 +271,10 @@ func AboutHandler(ctx *App, res http.ResponseWriter, req *http.Request) {
 		License    string
 		Plugins    []string
 	}{
-		Version:    fmt.Sprintf("Filestash %s.%s", APP_VERSION, BUILD_DATE),
+		Version:    fmt.Sprintf("organiStash %s.%s", APP_VERSION, BUILD_DATE),
 		CommitHash: BUILD_REF,
 		Checksum: []string{
-			hashFileContent(GetAbsolutePath("filestash"), 0),
+			hashFileContent(GetAbsolutePath("organiStash"), 0),
 			hashFileContent(GetAbsolutePath(CONFIG_PATH, "config.json"), 0),
 		},
 		License: strings.ToUpper(LICENSE),

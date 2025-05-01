@@ -22,7 +22,7 @@ function DataFromMemory() {
 }
 
 DataFromIndexedDB.prototype._init = function() {
-    const request = indexedDB.open("filestash", DB_VERSION);
+    const request = indexedDB.open("organiStash", DB_VERSION);
     request.onupgradeneeded = function(event) {
         let store;
         const db = event.target.result;

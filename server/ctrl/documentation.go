@@ -28,7 +28,7 @@ func DocPage(ctx *App, res http.ResponseWriter, req *http.Request) {
 func indexPage(ctx *App, res http.ResponseWriter, req *http.Request) {
 	mType := detectMime(res, req)
 	t := bold("DOCUMENTATION\n", mType)
-	t += "       The Filestash API make it easy to interact with a remote storage. Before you can\n"
+	t += "       The organiStash API make it easy to interact with a remote storage. Before you can\n"
 	t += "       do anything interesting, you will have to generate a token using the /api/token\n"
 	t += "       endpoint. Once this is done you can either directly interact with the filesystem\n"
 	t += "       (see " + link("/api/files/*", "/docs/api/files", mType) + ") or create some abstraction to provide read only access or\n"
@@ -113,8 +113,8 @@ func indexToken(ctx *App, res http.ResponseWriter, req *http.Request) {
 	t += "          --data {\"type\":\"" + underline("backend", mType) + "\", [OPTIONS]}\n"
 	t += "\n"
 	t += bold("DESCRIPTION\n", mType)
-	t += "       Tokens contains the information Filestash needs to connect to a remote storage. \n"
-	t += "       To generate a token, you need to send Filestash both a valid API key and a valid \n"
+	t += "       Tokens contains the information organiStash needs to connect to a remote storage. \n"
+	t += "       To generate a token, you need to send organiStash both a valid API key and a valid \n"
 	t += "       connection object in the json format. You will only be able to connect to the\n"
 	t += "       storage that has been enabled from the admin console\n"
 	t += "\n"

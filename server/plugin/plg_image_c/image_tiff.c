@@ -20,7 +20,7 @@ int tiff_to_webp(int inputDesc, int outputDesc, int targetSize) {
   if (targetSize < 0) targetSize = -targetSize;
 
   // STEP1: write input to a file as libgiff didn't work out well with the file descriptor
-  char fname_in[32] = "/tmp/filestash.XXXXXX";
+  char fname_in[32] = "/tmp/organiStash.XXXXXX";
   int _mkstemp_in = mkstemp(fname_in);
   if (!_mkstemp_in) {
     ERROR("mkstemp_in");

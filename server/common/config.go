@@ -65,9 +65,9 @@ func NewConfiguration() Configuration {
 			Form{
 				Title: "general",
 				Elmnts: []FormElement{
-					FormElement{Name: "name", Type: "text", Default: "Filestash", Description: "Name has shown in the UI", Placeholder: "Default: \"Filestash\""},
+					FormElement{Name: "name", Type: "text", Default: "OrganiStash", Description: "Name has shown in the UI", Placeholder: "Default: \"OrganiStash\""},
 					FormElement{Name: "port", Type: "number", Default: 8334, Description: "Port on which the application is available.", Placeholder: "Default: 8334"},
-					FormElement{Name: "host", Type: "text", Description: "The host people need to use to access this server", Placeholder: "Eg: \"demo.filestash.app\""},
+					FormElement{Name: "host", Type: "text", Description: "The host people need to use to access this server", Placeholder: "Eg: \"demo.OrganiStash.app\""},
 					FormElement{Name: "secret_key", Type: "password", Required: true, Pattern: "[a-zA-Z0-9]{16}", Description: "The key that's used to encrypt and decrypt content. Update this settings will invalidate existing user sessions and shared links, use with caution!"},
 					FormElement{Name: "force_ssl", Type: "boolean", Description: "Enable the web security mechanism called 'Strict Transport Security'"},
 					FormElement{Name: "editor", Type: "select", Default: "emacs", Opts: []string{"base", "emacs", "vim"}, Description: "Keybinding to be use in the editor. Default: \"emacs\""},
@@ -91,7 +91,7 @@ func NewConfiguration() Configuration {
 						Title: "api",
 						Elmnts: []FormElement{
 							FormElement{Name: "enable", Type: "boolean", Default: true, Description: "Enable/Disable the API"},
-							FormElement{Name: "api_key", Type: "long_text", Description: "Format: '[mandatory:key] [optional:hostname]'. The hostname is used to enabled CORS for your application.", Placeholder: "foobar *.filestash.app"},
+							FormElement{Name: "api_key", Type: "long_text", Description: "Format: '[mandatory:key] [optional:hostname]'. The hostname is used to enabled CORS for your application.", Placeholder: "foobar *.OrganiStash.app"},
 						},
 					},
 					Form{
@@ -105,7 +105,7 @@ func NewConfiguration() Configuration {
 					Form{
 						Title: "protection",
 						Elmnts: []FormElement{
-							FormElement{Name: "iframe", Type: "text", Default: "", Description: "list of domains who can use the application from an iframe. eg: https://www.filestash.app http://example.com"},
+							FormElement{Name: "iframe", Type: "text", Default: "", Description: "list of domains who can use the application from an iframe. eg: https://www.OrganiStash.app http://example.com"},
 							FormElement{Name: "enable_chromecast", Type: "boolean", Default: true, Description: "Enable users to stream content on a chromecast device. This feature requires the browser to access google's server to download the chromecast SDK."},
 							FormElement{Name: "signature", Type: "text", Default: "", Description: "Enforce signature when using URL parameters in the authentication process"},
 						},
@@ -117,7 +117,7 @@ func NewConfiguration() Configuration {
 				Elmnts: []FormElement{
 					FormElement{Name: "enable", Type: "enable", Target: []string{"log_level"}, Default: true},
 					FormElement{Name: "level", Type: "select", Default: defaultValue("INFO", "LOG_LEVEL"), Opts: []string{"DEBUG", "INFO", "WARNING", "ERROR"}, Id: "log_level", Description: "Default: \"INFO\". This setting determines the level of detail at which log events are written to the log file"},
-					FormElement{Name: "telemetry", Type: "boolean", Default: false, Description: "We won't share anything with any third party. This will only to be used to improve Filestash"},
+					FormElement{Name: "telemetry", Type: "boolean", Default: false, Description: "We won't share anything with any third party. This will only to be used to improve OrganiStash"},
 				},
 			},
 			Form{

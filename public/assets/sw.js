@@ -7,7 +7,7 @@ const CACHENAME = "assets";
  * developer console -> network, and look at the timing, 98% of the time
  * was spent "waiting for the server response".
  * HTTP2/3 should solve that issue but we don't control the proxy side of
- * things of how people install Filestash, hence the idea to bulk download
+ * things of how people install organiStash, hence the idea to bulk download
  * as much as we can through SSE, store it onto a cache and get our
  * service worker to inject the response.
  * This approach alone make the app a lot faster to load but relies on

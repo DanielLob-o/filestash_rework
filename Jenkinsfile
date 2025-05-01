@@ -43,7 +43,7 @@ pipeline {
                 script {
                     // smoke test
                     docker.image("golang:1.23-bookworm").inside("--user=root") {
-                        sh 'timeout 5 ./dist/filestash > access.log || code=$?; if [ $code -ne 124 ]; then exit $code; fi'
+                        sh 'timeout 5 ./dist/organiStash > access.log || code=$?; if [ $code -ne 124 ]; then exit $code; fi'
                         sh "cat access.log"
                         sh "cat access.log | grep -q \"\\[http\\] starting\""
                         sh "cat access.log | grep -q \"listening\""
@@ -71,8 +71,8 @@ pipeline {
                     // test e2e
                     docker.image("machines/puppeteer:latest").inside("--user=root") {
                         sh "cd ./test/e2e && npm install"
-                        sh "chmod +x ./dist/filestash"
-                        sh "./dist/filestash > /dev/null &"
+                        sh "chmod +x ./dist/organiStash"
+                        sh "./dist/organiStash > /dev/null &"
                         sh "cd ./test/e2e && node servers/webdav.js > /dev/null &"
                         // sh "cd ./test/e2e && npm test"
                     }

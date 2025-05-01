@@ -490,7 +490,7 @@ func applyCookieRules(cookie *http.Cookie, req *http.Request) *http.Cookie {
 			cookie.SameSite = http.SameSiteNoneMode
 			cookie.Partitioned = true
 		} else {
-			Log.Warning("you are trying to access Filestash from a non secure origin ('%s') and with iframe enabled. Either use SSL or disable iframe from the admin console.", f)
+			Log.Warning("you are trying to access organiStash from a non secure origin ('%s') and with iframe enabled. Either use SSL or disable iframe from the admin console.", f)
 		}
 	}
 	return cookie

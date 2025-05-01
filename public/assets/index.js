@@ -1,7 +1,7 @@
-// Want to integrate Filestash as a SDK in your application? You are in the right place!
+// Want to integrate organiStash as a SDK in your application? You are in the right place!
 //
 // How it works you may ask? it's simple:
-// 1) pick a component to render. Filestash components look like this:
+// 1) pick a component to render. organiStash components look like this:
 //    function(render, opts = {}) {
 //        // ...
 //    }
@@ -12,8 +12,8 @@
 // /***********************************************/
 // /* example to render the 3D viewer application */
 // /***********************************************/
-// import { render } from "https://demo.filestash.app/assets/index.js";
-// import * as Component from "https://demo.filestash.app/assets/pages/viewerpage/application_3d.js";
+// import { render } from "https://demo.organiStash.app/assets/index.js";
+// import * as Component from "https://demo.organiStash.app/assets/pages/viewerpage/application_3d.js";
 //
 // render(Component, document.getElementById("app"), {});
 //
@@ -28,8 +28,8 @@ export function render(module, $app, opts = {}) {
 }
 
 function assertArgs(module, $app) {
-    if (typeof module.default !== "function") throw new TypeError("Unsupported module - see documentation on how to use Filestash");
-    else if (!($app instanceof Node)) throw new TypeError("Invalid node - see documentation on how to use Filestash");
+    if (typeof module.default !== "function") throw new TypeError("Unsupported module - see documentation on how to use organiStash");
+    else if (!($app instanceof Node)) throw new TypeError("Invalid node - see documentation on how to use organiStash");
 }
 
 function execute(module, $app, opts) {

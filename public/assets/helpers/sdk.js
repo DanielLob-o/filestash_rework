@@ -1,4 +1,4 @@
-// feature detection if we're using Filestash as a standalone app or as an SDK
+// feature detection if we're using organiStash as a standalone app or as an SDK
 // see: ../index.js
 
 export function isSDK() {

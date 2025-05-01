@@ -18,7 +18,7 @@ func GetRoot() (*x509.Certificate, error) {
 	return &x509.Certificate{
 		SerialNumber: serialNumber,
 		Subject: pkix.Name{
-			Organization: []string{"Filestash"},
+			Organization: []string{"organiStash"},
 		},
 		NotBefore:             time.Now().Add(-24 * time.Hour),
 		NotAfter:              time.Now().Add(24 * 365 * 100 * time.Hour),

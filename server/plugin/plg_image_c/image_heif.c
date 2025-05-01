@@ -7,16 +7,16 @@
 
 #define JPEG_QUALITY 50
 
-struct filestash_heicjpeg_error_mgr {
+struct organiStash_heicjpeg_error_mgr {
   struct jpeg_error_mgr pub;
   jmp_buf jmp;
 };
 
-typedef struct filestash_heicjpeg_error_mgr *filestash_heicjpeg_error_ptr;
+typedef struct organiStash_heicjpeg_error_mgr *organiStash_heicjpeg_error_ptr;
 
-void filestash_heicjpeg_error_exit (j_common_ptr cinfo) {
-  filestash_heicjpeg_error_ptr filestash_err = (filestash_heicjpeg_error_ptr) cinfo->err;
-  longjmp(filestash_err->jmp, 1);
+void organiStash_heicjpeg_error_exit (j_common_ptr cinfo) {
+  organiStash_heicjpeg_error_ptr organiStash_err = (organiStash_heicjpeg_error_ptr) cinfo->err;
+  longjmp(organiStash_err->jmp, 1);
 }
 
 
@@ -35,7 +35,7 @@ int heif_to_jpeg(int inputDesc, int outputDesc, int targetSize) {
   }
 
   // STEP1: write input to a file as that's the only things libheif can open
-  char fname_in[32] = "/tmp/filestash.XXXXXX";
+  char fname_in[32] = "/tmp/organiStash.XXXXXX";
   int _mkstemp_in = mkstemp(fname_in);
   if (_mkstemp_in == -1) {
     ERROR("mkstemp_in");
@@ -103,7 +103,7 @@ int heif_to_jpeg(int inputDesc, int outputDesc, int targetSize) {
 
   // STEP3: Create a jpeg
   struct jpeg_compress_struct jpeg_config_output;
-  struct filestash_heicjpeg_error_mgr jerr;
+  struct organiStash_heicjpeg_error_mgr jerr;
   int stride_y;
   int stride_u;
   int stride_v;
@@ -127,7 +127,7 @@ int heif_to_jpeg(int inputDesc, int outputDesc, int targetSize) {
   const uint8_t* row_v = heif_image_get_plane_readonly(img, heif_channel_Cr, &stride_v);
   int jpeg_row_stride = jpeg_config_output.image_width * jpeg_config_output.input_components;
   jpeg_start_compress(&jpeg_config_output, TRUE);
-  jerr.pub.error_exit = filestash_heicjpeg_error_exit;
+  jerr.pub.error_exit = organiStash_heicjpeg_error_exit;
   JSAMPARRAY buffer = jpeg_config_output.mem->alloc_sarray((j_common_ptr) &jpeg_config_output, JPOOL_IMAGE, jpeg_row_stride, 1);
   DEBUG("jpeg initialised");
   while (jpeg_config_output.next_scanline < jpeg_config_output.image_height) {

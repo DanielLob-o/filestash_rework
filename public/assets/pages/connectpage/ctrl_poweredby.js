@@ -12,10 +12,10 @@ export default async function(render) {
     await new Promise((done) => setTimeout(done, 1000));
 
     render(transition(createElement(`
-        <div class="component_poweredbyfilestash">
-            ${t("Powered by")} <strong><a href="https://www.filestash.app">Filestash</a></strong>
+        <div class="component_poweredbyorganiStash">
+            ${t("Powered by")} <strong><a href="https://www.organiStash.app">OrganiStash</a></strong>
             <style>
-                .component_poweredbyfilestash{
+                .component_poweredbyorganiStash{
                     display: inline-block;
                     color: rgba(0, 0, 0, 0.4);
                     font-size: 0.9em;
@@ -25,13 +25,13 @@ export default async function(render) {
                     bottom: 10px;
                     right: 20px;
                 }
-                .component_poweredbyfilestash strong{
+                .component_poweredbyorganiStash strong{
                     font-weight: normal;
                 }
-                .component_poweredbyfilestash strong a{
+                .component_poweredbyorganiStash strong a{
                     text-decoration: underline;
                 }
-                .dark-mode .component_poweredbyfilestash {
+                .dark-mode .component_poweredbyorganiStash {
                     color: var(--light);
                 }
             </style>

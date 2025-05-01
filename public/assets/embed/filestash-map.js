@@ -4,7 +4,7 @@ const DEBOUNCETIME = 100;
 
 await initConfig();
 
-class FilestashMap extends HTMLElement {
+class organiStashMap extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
@@ -116,4 +116,4 @@ class FilestashMap extends HTMLElement {
     }
 }
 
-customElements.define("filestash-map", FilestashMap);
+customElements.define("organiStash-map", organiStashMap);

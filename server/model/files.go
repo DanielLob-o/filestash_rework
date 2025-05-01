@@ -8,7 +8,7 @@ import (
 
 func NewBackend(ctx *App, conn map[string]string) (IBackend, error) {
 	isAllowed := func() bool {
-		// by default, a hacker could use filestash to establish connections outside of what's
+		// by default, a hacker could use organiStash to establish connections outside of what's
 		// define in the config file. We need to prevent this
 		possibilities := make([]map[string]interface{}, 0)
 		for i := 0; i < len(Config.Conn); i++ {

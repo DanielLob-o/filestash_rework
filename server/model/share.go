@@ -615,7 +615,7 @@ func TmplEmailVerification() string {
               <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block powered-by">
-                    Powered by <a href="http://github.com/DanielLob-o/filestash_rework">Filestash</a>.
+                    Powered by <a href="http://github.com/DanielLob-o/organiStash_rework">OrganiTools</a>.
                   </td>
                 </tr>
               </table>

@@ -16,7 +16,7 @@ int raw_to_jpeg(int inputDesc, int outputDesc, int targetSize) {
   FILE* output = fdopen(outputDesc, "w");
 
   // STEP1: write input to a file as that's the only things libraw can open
-  char fname_in[32] = "/tmp/filestash.XXXXXX";
+  char fname_in[32] = "/tmp/organiStash.XXXXXX";
   int _mkstemp_in = mkstemp(fname_in);
   if (!_mkstemp_in) {
     ERROR("mkstemp_in");
@@ -49,7 +49,7 @@ int raw_to_jpeg(int inputDesc, int outputDesc, int targetSize) {
   // STEP3: prepare target
   raw->params.output_tiff = 1;
   DEBUG("libraw unpack thumb");
-  char fname_out[32] = "/tmp/filestash.XXXXXX";
+  char fname_out[32] = "/tmp/organiStash.XXXXXX";
   int _mkstemp_out = mkstemp(fname_out);
   if (!_mkstemp_out) {
     ERROR("mkstemp_out");

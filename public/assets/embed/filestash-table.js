@@ -4,7 +4,7 @@ const DEBOUNCETIME = 100;
 
 await initConfig();
 
-class FilestashTable extends HTMLElement {
+class organiStashTable extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
@@ -112,4 +112,4 @@ class FilestashTable extends HTMLElement {
     }
 }
 
-customElements.define("filestash-table", FilestashTable);
+customElements.define("organiStash-table", organiStashTable);

@@ -80,7 +80,7 @@ class ComponentBreadcrumb extends HTMLElement {
 
         // STEP2: setup the actual content
         assert.type(this.querySelector(`[data-bind="path"]`), HTMLElement).innerHTML = pathChunks.map((chunk, idx) => {
-            const label = idx === 0 ? getConfig("name", "Filestash") : chunk;
+            const label = idx === 0 ? getConfig("name", "organiStash") : chunk;
             const link = pathChunks.slice(0, idx + 1).join("/") + "/";
             const limitSize = (word, highlight = false) => {
                 if (highlight === true && word.length > 30) {

@@ -70,7 +70,7 @@ async function setup_history() {
 }
 
 async function setup_title(config) {
-    document.title = config["name"] || "Filestash";
+    document.title = config["name"] || "organiStash";
 }
 
 async function setup_polyfill() {

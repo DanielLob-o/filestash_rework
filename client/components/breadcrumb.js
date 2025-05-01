@@ -26,7 +26,7 @@ export class BreadCrumb extends React.Component {
         }
         paths = paths.map((path, index) => {
             const sub_path = paths.slice(0, index+1).join("/");
-            const label = path === "" ? (CONFIG.name || "Filestash") : path;
+            const label = path === "" ? (CONFIG.name || "organiStash") : path;
             if (index === paths.length - 1) {
                 return { full: null, label: label };
             } else {

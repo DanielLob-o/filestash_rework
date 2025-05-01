@@ -1,22 +1,22 @@
 version: '2'
 services:
   app:
-    container_name: filestash
-    image: machines/filestash:latest
+    container_name: organiStash
+    image: machines/organiStash:latest
     restart: always
     environment:
     - APPLICATION_URL=
     - CANARY=true
     - OFFICE_URL=http://wopi_server:9980
-    - OFFICE_FILESTASH_URL=http://app:8334
+    - OFFICE_organiStash_URL=http://app:8334
     - OFFICE_REWRITE_URL=http://127.0.0.1:9980
     ports:
     - "8334:8334"
     volumes:
-    - filestash:/app/data/state/
+    - organiStash:/app/data/state/
 
   wopi_server:
-    container_name: filestash_wopi
+    container_name: organiStash_wopi
     image: collabora/code:24.04.10.2.1
     restart: always
     environment:
@@ -33,4 +33,4 @@ services:
     - "9980:9980"
 
 volumes:
-    filestash: {}
+    organiStash: {}

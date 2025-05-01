@@ -30,7 +30,7 @@ var (
 func init() {
 	// STEP1: setup app path
 	rootPath := "data/"
-	if p := os.Getenv("FILESTASH_PATH"); p != "" {
+	if p := os.Getenv("organiStash_PATH"); p != "" {
 		rootPath = p
 	}
 	LOG_PATH = filepath.Join(rootPath, LOG_PATH)
@@ -80,7 +80,7 @@ func InitSecretDerivate(secret string) {
 	SECRET_KEY_DERIVATE_FOR_SIGNATURE = Hash("SGN_"+SECRET_KEY, len(SECRET_KEY))
 }
 
-var base = os.Getenv("FILESTASH_BASE")
+var base = os.Getenv("organiStash_BASE")
 
 func WithBase(href string) string {
 	if base == "" {

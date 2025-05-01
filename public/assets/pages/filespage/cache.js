@@ -96,7 +96,7 @@ class IndexDBCache extends ICache {
     constructor() {
         super();
 
-        const request = indexedDB.open("filestash", this.DB_VERSION);
+        const request = indexedDB.open("organiStash", this.DB_VERSION);
         request.onupgradeneeded = this._migration.bind(this);
 
         this.db = new Promise((done, err) => {

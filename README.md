@@ -19,7 +19,7 @@
                Dropbox • Google Drive
 </p>
 <p align="center">
-    <a href="http://demo.filestash.app">
+    <a href="http://demo.organiStash.app">
       <img src="https://raw.githubusercontent.com/DanielLob-o/filestash_rework_images/master/.assets/button_demo.png" alt="demo button" />
     </a>
 </p>

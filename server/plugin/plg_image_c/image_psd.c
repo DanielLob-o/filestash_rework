@@ -21,7 +21,7 @@ int psd_to_webp(int inputDesc, int outputDesc, int targetSize) {
   }
 
   // STEP1: write input to a file as stb doesn't work out well with our descriptor
-  char fname_in[32] = "/tmp/filestash.XXXXXX";
+  char fname_in[32] = "/tmp/organiStash.XXXXXX";
   int _mkstemp_in = mkstemp(fname_in);
   if (!_mkstemp_in) {
     ERROR("mkstemp_in");
@@ -67,7 +67,7 @@ int psd_to_webp(int inputDesc, int outputDesc, int targetSize) {
     goto CLEANUP_AND_ABORT;
   }
   fwrite(webp_output_data, webp_output_size, 1, output);
-  fprintf(stderr, "WRITEN[%d]", webp_output_size);
+  fprintf(stderr, "WRITEN[%zu]", webp_output_size);
   fflush(output);
 
   WebPFree(webp_output_data);

@@ -81,7 +81,7 @@ function SideMenu(props) {
     useEffect(() => {
         const controller = new AbortController();
         fetch("/about", { signal: controller.signal }).then((r) => {
-            setVersion(r.headers.get("X-Powered-By").replace(/^Filestash\/([v\.0-9]*).*$/, "$1"))
+            setVersion(r.headers.get("X-Powered-By").replace(/^organiStash\/([v\.0-9]*).*$/, "$1"))
         })
         return () => controller.abort();
     }, []);

@@ -13,7 +13,7 @@ export function get() {
             a.innerHTML = response;
             return {
                 html: a.querySelector("table")?.outerHTML,
-                version: responseHeaders["x-powered-by"].trim().replace(/^Filestash\/([v\.0-9]*).*$/, "$1")
+                version: responseHeaders["x-powered-by"].trim().replace(/^organiStash\/([v\.0-9]*).*$/, "$1")
             };
         }),
     );

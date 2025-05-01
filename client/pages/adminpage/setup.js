@@ -104,7 +104,7 @@ export class SetupPage extends React.Component {
                     "name_failure": "Emacs is not installed",
                     "pass": objectGet(config, ["constant", "emacs", "value"]),
                     "severe": false,
-                    "message": "If you want to use all the org-mode features of Filestash, you need to install emacs",
+                    "message": "If you want to use all the org-mode features of organiStash, you need to install emacs",
                 }, {
                     "name_success": "Pdftotext is installed",
                     "name_failure": "Pdftotext is not installed",
