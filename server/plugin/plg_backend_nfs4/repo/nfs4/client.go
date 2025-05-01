@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_backend_nfs4/repo/internal"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_backend_nfs4/repo/internal"
 )
 
 const NfsReadBlockLen = 512 * 1024

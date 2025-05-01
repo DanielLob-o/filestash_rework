@@ -15,8 +15,8 @@ import (
 	"strings"
 	"text/template"
 
-	. "github.com/mickael-kerjean/filestash"
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 
 	"github.com/bluekeyes/go-gitdiff/gitdiff"
 )
@@ -223,7 +223,7 @@ func AboutHandler(ctx *App, res http.ResponseWriter, req *http.Request) {
 				}
 				list := strings.Split(lstr, " ")
 				for i, _ := range list {
-					list[i] = `<a href="https://github.com/mickael-kerjean/filestash/tree/` + commit +
+					list[i] = `<a href="https://github.com/DanielLob-o/filestash_rework/tree/` + commit +
 						`/server/plugin/` + list[i] + `" target="_blank">` + list[i] + `</a>`
 				}
 				return strings.Join(list, " ")
@@ -232,7 +232,7 @@ func AboutHandler(ctx *App, res http.ResponseWriter, req *http.Request) {
 		Parse(Page(`
 	  <h1> {{ .Version }} </h1>
 	  <table>
-		<tr> <td style="width:150px;"> Commit hash </td> <td> <a href="https://github.com/mickael-kerjean/filestash/tree/{{ .CommitHash }}">{{ .CommitHash }}</a> </td> </tr>
+		<tr> <td style="width:150px;"> Commit hash </td> <td> <a href="https://github.com/DanielLob-o/filestash_rework/tree/{{ .CommitHash }}">{{ .CommitHash }}</a> </td> </tr>
 		<tr> <td> Binary hash </td> <td> {{ index .Checksum 0}} </td> </tr>
 		<tr> <td> Config hash </td> <td> {{ index .Checksum 1}} </td> </tr>
 		<tr> <td> License </td> <td> {{ .License }} </td> </tr>
@@ -511,11 +511,11 @@ func InitPluginList(code []byte) {
 		packageName := packageNameMatch[1]
 		packageShortName := filepath.Base(packageName)
 
-		if strings.HasPrefix(packageName, "github.com/mickael-kerjean/filestash/server/plugin/") {
+		if strings.HasPrefix(packageName, "github.com/DanielLob-o/filestash_rework/server/plugin/") {
 			listOfPlugins["oss"] = append(listOfPlugins["oss"], packageShortName)
-		} else if strings.HasPrefix(packageName, "github.com/mickael-kerjean/filestash/filestash-enterprise/plugins/") {
+		} else if strings.HasPrefix(packageName, "github.com/DanielLob-o/filestash_rework/filestash-enterprise/plugins/") {
 			listOfPlugins["enterprise"] = append(listOfPlugins["enterprise"], packageShortName)
-		} else if strings.HasPrefix(packageName, "github.com/mickael-kerjean/filestash/filestash-enterprise/customers/") {
+		} else if strings.HasPrefix(packageName, "github.com/DanielLob-o/filestash_rework/filestash-enterprise/customers/") {
 			listOfPlugins["custom"] = append(listOfPlugins["custom"], packageShortName)
 		} else {
 			listOfPlugins["custom"] = append(listOfPlugins["custom"], packageShortName)

@@ -3,8 +3,8 @@ package plg_search_sqlitefts
 import (
 	"strings"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_search_sqlitefts/indexer"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_search_sqlitefts/indexer"
 )
 
 func (this *Crawler) Indexing(tx indexer.Manager) bool {

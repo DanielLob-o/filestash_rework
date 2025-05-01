@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 
 	//"github.com/secsy/goftp" <- FTP issue with microsoft FTP
 	"github.com/prasad83/goftp"

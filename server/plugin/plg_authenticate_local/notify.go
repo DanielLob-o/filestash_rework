@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"text/template"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 
 	"gopkg.in/gomail.v2"
 )

@@ -7,12 +7,12 @@ pipeline {
         stage("Setup") {
             steps {
                 git(
-                    url: "git@github.com:mickael-kerjean/filestash",
+                    url: "git@github.com:DanielLob-o/filestash_rework",
                     branch: "master"
                 )
                 dir("test") {
                     git(
-                        url: "git@github.com:mickael-kerjean/filestash-test.git",
+                        url: "git@github.com:DanielLob-o/filestash_rework-test.git",
                         credentialsId: "github-com-filestash-test",
                         branch: "main"
                     )

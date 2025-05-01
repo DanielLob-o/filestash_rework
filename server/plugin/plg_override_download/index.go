@@ -3,7 +3,7 @@ package plg_override_download
 import (
 	"embed"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 )
 
 //go:embed assets/*

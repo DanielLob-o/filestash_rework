@@ -14,8 +14,8 @@ import (
 	"path/filepath"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/common/ssl"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/common/ssl"
 
 	"github.com/gorilla/mux"
 	"golang.org/x/crypto/acme/autocert"

@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"strings"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/model"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/model"
 
 	"github.com/gorilla/mux"
 )

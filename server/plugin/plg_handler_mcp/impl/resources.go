@@ -1,7 +1,7 @@
 package impl
 
 import (
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/types"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/types"
 )
 
 func AllResources() []Resource {

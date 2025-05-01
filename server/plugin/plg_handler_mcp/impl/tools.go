@@ -3,7 +3,7 @@ package impl
 import (
 	"net/http"
 
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/types"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/types"
 )
 
 var listOfTools = map[string]ToolDefinition{}

@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/model"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/impl"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/types"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/utils"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/model"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/impl"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/types"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/utils"
 
 	"github.com/google/uuid"
 )

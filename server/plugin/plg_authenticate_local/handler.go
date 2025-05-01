@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"text/template"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 )
 
 //go:embed handler.html

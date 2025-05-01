@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 	"github.com/hirochachacha/go-smb2"
-	. "github.com/mickael-kerjean/filestash/server/common"
 )
 
 var SambaCache AppCache

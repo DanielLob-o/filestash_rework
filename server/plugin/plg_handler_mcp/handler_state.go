@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/types"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/types"
 )
 
 func (this *Server) RemoveSession(userSession *UserSession) {

@@ -17,8 +17,8 @@ import (
 	"crypto/sha512"
 	"strconv"
 
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_authenticate_htpasswd/deps/crypt"
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_authenticate_htpasswd/deps/crypt/common"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_authenticate_htpasswd/deps/crypt"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_authenticate_htpasswd/deps/crypt/common"
 )
 
 func init() {

@@ -4,8 +4,8 @@ import (
 	"container/heap"
 	"sync"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_search_sqlitefts/indexer"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_search_sqlitefts/indexer"
 )
 
 var DaemonState = daemonState{

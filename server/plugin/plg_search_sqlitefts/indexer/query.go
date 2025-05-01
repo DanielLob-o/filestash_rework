@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 )
 
 func (this sqliteIndex) Search(path string, q string) ([]IFile, error) {

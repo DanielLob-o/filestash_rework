@@ -17,7 +17,7 @@ import (
 	"sort"
 	"strings"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 
 	"github.com/go-ldap/ldap/v3"
 )

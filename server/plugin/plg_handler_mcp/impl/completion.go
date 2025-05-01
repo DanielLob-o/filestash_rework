@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/types"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/utils"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/types"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/utils"
 )
 
 func ExecCompletion(params map[string]any, userSession *UserSession) Completion {

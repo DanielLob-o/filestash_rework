@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_search_sqlitefts/converter"
-	"github.com/mickael-kerjean/filestash/server/plugin/plg_search_sqlitefts/indexer"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_search_sqlitefts/converter"
+	"github.com/DanielLob-o/filestash_rework/server/plugin/plg_search_sqlitefts/indexer"
 )
 
 func updateFile(path string, backend IBackend, tx indexer.Manager) error {

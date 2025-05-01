@@ -17,7 +17,7 @@ import (
 	"time"
 	"unsafe"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 
 	"github.com/creack/pty"
 	"github.com/gorilla/mux"
@@ -286,7 +286,7 @@ func htmlIndex(pathPrefix string) []byte {
   <body>
     <div id="terminal"></div>
     <div id="error-message"></div>
-    <script>` + AppScript(pathPrefix) + `</script>    
+    <script>` + AppScript(pathPrefix) + `</script>
   </body>
 </html>`)
 }

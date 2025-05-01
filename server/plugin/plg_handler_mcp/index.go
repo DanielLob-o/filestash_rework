@@ -3,9 +3,9 @@ package plg_handler_mcp
 import (
 	"sync"
 
-	. "github.com/mickael-kerjean/filestash/server/common"
-	. "github.com/mickael-kerjean/filestash/server/middleware"
-	. "github.com/mickael-kerjean/filestash/server/plugin/plg_handler_mcp/config"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/middleware"
+	. "github.com/DanielLob-o/filestash_rework/server/plugin/plg_handler_mcp/config"
 
 	"github.com/gorilla/mux"
 )

@@ -1,7 +1,7 @@
 package plg_backend_nop
 
 import (
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 	"io"
 	"os"
 	"strconv"

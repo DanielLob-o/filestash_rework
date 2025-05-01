@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"sync"
 
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/credentials"
@@ -15,7 +16,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/aws/aws-sdk-go/service/sts"
-	. "github.com/mickael-kerjean/filestash/server/common"
 
 	"io"
 	"os"

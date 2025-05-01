@@ -1,7 +1,7 @@
 package plg_backend_local
 
 import (
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
 	"golang.org/x/crypto/bcrypt"
 	"io"
 	"os"

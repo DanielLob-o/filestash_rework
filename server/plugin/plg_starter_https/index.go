@@ -3,9 +3,9 @@ package plg_starter_https
 import (
 	"crypto/tls"
 	"fmt"
+	. "github.com/DanielLob-o/filestash_rework/server/common"
+	"github.com/DanielLob-o/filestash_rework/server/common/ssl"
 	"github.com/gorilla/mux"
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/common/ssl"
 	"net/http"
 	"time"
 )
