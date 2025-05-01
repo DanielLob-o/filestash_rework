@@ -192,7 +192,7 @@ func ServeFrontofficeHandler(ctx *App, res http.ResponseWriter, req *http.Reques
 }
 
 func ServeFavicon(ctx *App, res http.ResponseWriter, req *http.Request) {
-	r, _ := http.NewRequest(http.MethodGet, "/favicon.svg", nil)
+	r, _ := http.NewRequest(http.MethodGet, "/favicon.ico", nil)
 	ServeFile("/assets/logo/")(ctx, res, r)
 }
 
